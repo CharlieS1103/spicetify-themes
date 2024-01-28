@@ -12,10 +12,10 @@ View the **CHANGELOG** [here](https://github.com/grasonchan/spotify-spice/blob/m
   <img src="screenshots/turntable.png" alt="turntable">
 </div>
 <div align="center">
-  <img src="screenshots/full_app_display.png" alt="full app display">
+  <img src="screenshots/fad.png" alt="full app display">
 </div>
 <div align="center">
-  <img src="screenshots/full_app_display_vertical_mode.png" alt="full app display - vertical mode">
+  <img src="screenshots/fad_vertical.png" alt="full app display - vertical mode">
 </div>
 
 ## More
@@ -36,26 +36,25 @@ Develop and test on macOS. If there's any problem, please open issue or PR.
 
 ### Installation
 
-1. add extension - [Full App Display](https://github.com/khanhas/spicetify-cli/wiki/Extensions#full-app-display)
+1. add extension - [Full App Display](https://spicetify.app/docs/getting-started/extensions#full-app-display)
 
 ```shell
 spicetify config extensions fullAppDisplay.js
 spicetify apply
 ```
 
-2. put **Turntable** and **rotateTurntable.js** into the **spicetify_data**
+2. put **Turntable** into the **.config/spicetify**
 
 ```shell
 cd spicetify-themes
-cp -r Turntable ~/spicetify_data/Themes
-cp Turntable/rotateTurntable.js ~/spicetify_data/Extensions
+cp -r Turntable ~/.config/spicetify/Themes
 ```
 
-3. select the theme and extension, then apply
+3. select the theme, then apply
 
 ```shell
 spicetify config current_theme Turntable
-spicetify config extensions rotateTurntable.js
+spicetify config inject_theme_js 1
 spicetify apply
 ```
 
@@ -64,8 +63,7 @@ spicetify apply
 1. remove **Turntable** and **rotateTurntable.js**
 
 ```shell
-rm -r ~/spicetify_data/Themes/Turntable
-rm ~/spicetify_data/Extensions/rotateTurntable.js
+rm -r ~/.config/spicetify/Themes/Turntable
 ```
 
 2. config to spicetify default theme
@@ -74,7 +72,7 @@ rm ~/spicetify_data/Extensions/rotateTurntable.js
 spicetify config current_theme SpicetifyDefault
 ```
 
-3. remove extension - Full App Display (optional)
+3. remove extension - Full App Display
 
 ```shell
 spicetify config extensions fullAppDisplay.js-

@@ -1,8 +1,6 @@
 # spicetify community themes
 
-### **Some of the themes are not working properly due to a recent Spotify update. Spicetify community is aware of that and everyone is working hard to fix them, so please do not open new issues.**
-
-This is a collection of themes for [spicetify](https://github.com/khanhas/spicetify-cli), a command-line tool to customize Spotify.
+This is a collection of themes for [spicetify](https://github.com/spicetify/spicetify-cli), a command-line tool to customize Spotify.
 
 You can add your own theme simply by opening a Pull Request (more info in [CONTRIBUTING.md](./CONTRIBUTING.md)).
 
@@ -10,8 +8,8 @@ You can add your own theme simply by opening a Pull Request (more info in [CONTR
 
 ## Notes:
 
-*   **These themes require you to have the latest version of Spotify and Spicetify.**
-*   **To install Dribbblish and Turntable, follow the instructions in their READMEs**.
+*   **These themes require that you have the latest version of Spotify and Spicetify.**
+*   **To install Dribbblish and Turntable themes, follow the instructions in their READMEs**.
 *   **Spotify ad-blocked version is not supported.**
 
 ## Installation and usage
@@ -20,10 +18,10 @@ You can add your own theme simply by opening a Pull Request (more info in [CONTR
 
 1.  Clone this repository. Make sure [git](https://git-scm.com/) is installed and run:
     ```bash
-    git clone https://github.com/morpheusthewhite/spicetify-themes.git
+    git clone --depth=1 https://github.com/spicetify/spicetify-themes.git 
     ```
 
-2.  Copy the files into the [Spicetify Themes folder](https://github.com/khanhas/spicetify-cli/wiki/Customization#themes). Run:
+2.  Copy the files into the [Spicetify Themes folder](https://spicetify.app/docs/development/themes). Run:
 
     **Linux**
 
